@@ -1,0 +1,361 @@
+{
+  "active_production_version": "v7",
+  "models": [
+    {
+      "version": "test_v1",
+      "algorithm": "LogisticRegression",
+      "stage": "Candidate",
+      "artifact_path": "models_store\\test_v1.joblib",
+      "metrics": {
+        "accuracy": 0.812,
+        "roc_auc": 0.8607,
+        "f1": 0.5217,
+        "precision": 0.6923,
+        "recall": 0.4186
+      },
+      "parameters": {
+        "max_iter": 500
+      },
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          249,
+          16
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "created_at": "2026-10-07T16:29:00.449249+00:00",
+      "promoted_at": null,
+      "notes": "Trained LogisticRegression on 1405 samples",
+      "quality_gate_passed": true
+    },
+    {
+      "version": "model_a",
+      "algorithm": "LogisticRegression",
+      "stage": "Candidate",
+      "artifact_path": "models_store\\model_a.joblib",
+      "metrics": {
+        "accuracy": 0.812,
+        "roc_auc": 0.8607,
+        "f1": 0.5217,
+        "precision": 0.6923,
+        "recall": 0.4186
+      },
+      "parameters": {
+        "max_iter": 500
+      },
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          249,
+          16
+        ],
+        [
+          50,
+          36
+        ]
+      ],
+      "created_at": "2026-10-07T16:29:00.646180+00:00",
+      "promoted_at": null,
+      "notes": "Trained LogisticRegression on 1405 samples",
+      "quality_gate_passed": true
+    },
+    {
+      "version": "model_b",
+      "algorithm": "RandomForest",
+      "stage": "Archived",
+      "artifact_path": "models_store\\model_b.joblib",
+      "metrics": {
+        "accuracy": 0.7578,
+        "roc_auc": 0.786,
+        "f1": 0.023,
+        "precision": 1.0,
+        "recall": 0.0116
+      },
+      "parameters": {
+        "n_estimators": 10,
+        "max_depth": 3
+      },
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          265,
+          0
+        ],
+        [
+          85,
+          1
+        ]
+      ],
+      "created_at": "2026-10-07T16:29:00.829084+00:00",
+      "promoted_at": "2026-10-07T16:29:00.834126+00:00",
+      "notes": "Trained RandomForest on 1405 samples",
+      "quality_gate_passed": false
+    },
+    {
+      "version": "v4",
+      "algorithm": "GradientBoosting",
+      "stage": "Archived",
+      "artifact_path": "models_store\\v4.joblib",
+      "metrics": {
+        "accuracy": 0.7635,
+        "roc_auc": 0.7974,
+        "f1": 0.443,
+        "precision": 0.5238,
+        "recall": 0.3837
+      },
+      "parameters": {},
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          235,
+          30
+        ],
+        [
+          53,
+          33
+        ]
+      ],
+      "created_at": "2026-10-07T16:28:44.917606+00:00",
+      "promoted_at": "2026-10-07T16:28:44.926120+00:00",
+      "notes": "Integration test",
+      "quality_gate_passed": false
+    },
+    {
+      "version": "v5",
+      "algorithm": "GradientBoosting",
+      "stage": "Archived",
+      "artifact_path": "models_store\\v5.joblib",
+      "metrics": {
+        "accuracy": 0.7806,
+        "roc_auc": 0.8024,
+        "f1": 0.4901,
+        "precision": 0.5692,
+        "recall": 0.4302
+      },
+      "parameters": {
+        "learning_rate": 0.06,
+        "max_iter": 130
+      },
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          237,
+          28
+        ],
+        [
+          49,
+          37
+        ]
+      ],
+      "created_at": "2026-10-07T16:28:45.433965+00:00",
+      "promoted_at": "2026-10-07T16:28:57.316873+00:00",
+      "notes": "Retrained due to: Auto drift response",
+      "quality_gate_passed": false
+    },
+    {
+      "version": "v6",
+      "algorithm": "GradientBoosting",
+      "stage": "Archived",
+      "artifact_path": "models_store\\v6.joblib",
+      "metrics": {
+        "accuracy": 0.7635,
+        "roc_auc": 0.7974,
+        "f1": 0.443,
+        "precision": 0.5238,
+        "recall": 0.3837
+      },
+      "parameters": {},
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          235,
+          30
+        ],
+        [
+          53,
+          33
+        ]
+      ],
+      "created_at": "2026-10-07T16:28:57.295486+00:00",
+      "promoted_at": "2026-10-07T16:28:57.307205+00:00",
+      "notes": "Integration test",
+      "quality_gate_passed": false
+    },
+    {
+      "version": "v7",
+      "algorithm": "GradientBoosting",
+      "stage": "Production",
+      "artifact_path": "models_store\\v7.joblib",
+      "metrics": {
+        "accuracy": 0.7806,
+        "roc_auc": 0.8024,
+        "f1": 0.4901,
+        "precision": 0.5692,
+        "recall": 0.4302
+      },
+      "parameters": {
+        "learning_rate": 0.06,
+        "max_iter": 130
+      },
+      "feature_names": [
+        "tenure",
+        "monthly_charges",
+        "total_charges",
+        "senior_citizen",
+        "gender",
+        "partner",
+        "dependents",
+        "phone_service",
+        "multiple_lines",
+        "internet_service",
+        "online_security",
+        "online_backup",
+        "device_protection",
+        "tech_support",
+        "streaming_tv",
+        "streaming_movies",
+        "contract",
+        "paperless_billing",
+        "payment_method"
+      ],
+      "confusion_matrix": [
+        [
+          237,
+          28
+        ],
+        [
+          49,
+          37
+        ]
+      ],
+      "created_at": "2026-10-07T16:28:59.663383+00:00",
+      "promoted_at": "2026-10-07T16:29:00.836292+00:00",
+      "notes": "Retrained due to: Auto drift response",
+      "quality_gate_passed": false
+    }
+  ]
+}
